@@ -25,36 +25,32 @@
   <!-- Header page -->
   <header class="page-header">
     <div class="container">
-      <a class="logo link" href="./index.html"><span class="logo-accent-span">Web</span><span
-          class="logo-header-span">Studio</span></a>
+      <a class="logo link" href="./index.html">Web<span class="logo__label--dark">Studio</span></a>
       <nav class="main-nav">
-        <ul class="list">
-          <li class="nav-item">
-            <a class="nav-link link" href="./index.html">Студія</a>
-            <div class="nav-link-decoration"></div>
+        <ul class="main-nav__list list">
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="./index.html">Студія</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link current link" href="./portfolio.html">Портфоліо</a>
-            <div class="nav-link-decoration"></div>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active current link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link link" href="">Контакти</a>
-            <div class="nav-link-decoration"></div>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul class="header-contacts list">
-        <li class="header-contacts-item">
-          <a class="contact-link link" href="mailto:info@devstudio.com">
-            <svg class="contact-icon" width="16" height="12">
+      <ul class="contacts page-header__contacts list">
+        <li class="contacts__item">
+          <a class="contacts__link link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
-        <li class="header-contacts-item">
-          <a class="contact-link link" href="tel:+380961111111">
-            <svg class="contact-icon" width="10" height="16">
+        <li class="contacts__item">
+          <a class="contacts__link link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11
@@ -186,64 +182,62 @@
   </main>
   <!-- Footer page -->
   <footer class="page-footer">
-    <div class="container">
-      <div class="footer-group">
-        <a class="logo link" href="./index.html"><span class="logo-accent-span">Web</span><span
-            class="logo-footer-span">Studio</span></a>
+    <div class="container page-footer__container">
+      <div class="contacts page-footer__contacts">
+        <a class="logo page-footer__logo link" href="./index.html">Web<span class="logo__label--light">Studio</span></a>
         <address class="address">
-          <p class="text">м. Київ, пр-т Лесі Українки, 26</p>
+          <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="list">
-            <li class="address-item">
-              <a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="address__item">
+              <a class="address__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="address-item">
-              <a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="address__item">
+              <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
       <div class="join">
-        <h2 class="join-title">приєднуйтесь</h2>
-        <ul class="socials-list grid-set list">
-          <li class="socials-item">
-            <a class="socials-link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram">
-              <svg class="socials-icon" width="20" height="20">
+        <h2 class="join__title">приєднуйтесь</h2>
+        <ul class="socials socials__list grid-set list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--dark-theme link" href="https://instagram.com" target="_blank"
+              rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="socials__icon" width="20" height="20">
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="socials-item">
-            <a class="socials-link link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-              aria-label="Twitter">
-              <svg class="socials-icon" width="20" height="20">
+          <li class="socials__item">
+            <a class="socials__link socials__link--dark-theme link" href="https://twitter.com" target="_blank"
+              rel="noopener noreferrer" aria-label="Twitter">
+              <svg class="socials__icon" width="20" height="20">
                 <use href="./images/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="socials-item">
-            <a class="socials-link link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook">
-              <svg class="socials-icon" width="20" height="20">
+          <li class="socials__item">
+            <a class="socials__link socials__link--dark-theme link" href="https://facebook.com" target="_blank"
+              rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="socials__icon" width="20" height="20">
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="socials-item">
-            <a class="socials-link link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-              aria-label="LinkedIn">
-              <svg class="socials-icon" width="20" height="20">
+          <li class="socials__item">
+            <a class="socials__link socials__link--dark-theme link" href="https://linkedin.com" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="socials__icon" width="20" height="20">
                 <use href="./images/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <form class="subscribe-form" name="form-subscribe" autocomplete="on">
-        <label class="subscribe-form-field" for="subscribe-email">
-          <span class="subscribe-form-label">Підпишіться на розсилку</span>
-          <input class="subscribe-form-input" type="email" name="subscribe-email" id="subscribe-email"
-            placeholder="E-mail">
+      <form class="subscribe-form" name="subscribe-form" autocomplete="on">
+        <label class="subscribe-form__field">
+          <span class="subscribe-form__label">Підпишіться на розсилку</span>
+          <input class="subscribe-form__input" type="email" name="subscribe-email" placeholder="E-mail">
         </label>
         <button class="submit-btn" type="submit">Підписатися
           <svg width="24" height="24">
