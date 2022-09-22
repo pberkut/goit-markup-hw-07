@@ -9,7 +9,7 @@
 
   /* Text color */
   --main-txt-cl: #212121;
-  --accent-txt-cl: #2196f3;
+  --accent-cl: #2196f3;
   --grey-txt-cl: #757575;
   --white-txt-cl: #fff;
   --black-txt-cl: #000;
@@ -130,11 +130,11 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: var(--accent-txt-cl);
+  color: var(--accent-cl);
 }
 
 /* .logo-accent-span {
-  color: var(--accent-txt-cl);
+  color: var(--accent-cl);
 } */
 
 .logo__label--dark {
@@ -184,14 +184,14 @@ body {
   height: 4px;
 
   border-radius: 2px;
-  background-color: var(--accent-txt-cl);
+  background-color: var(--accent-cl);
 
   opacity: 0;
 }
 
 
 .main-nav__link--active::after {
-  color: var(--accent-txt-cl);
+  color: var(--accent-cl);
   opacity: 1;
 }
 
@@ -199,7 +199,7 @@ body {
 .main-nav__link:focus,
 .contacts__link:hover,
 .contacts__link:focus {
-  color: var(--accent-txt-cl);
+  color: var(--accent-cl);
 }
 
 /* Page-header contacts */
@@ -442,7 +442,7 @@ body {
 
 .socials__link:hover,
 .socials__link:focus {
-  background-color: var(--accent-txt-cl);
+  background-color: var(--accent-cl);
   color: var(--white-txt-cl);
 }
 
@@ -451,7 +451,7 @@ body {
   | Clients section
   |============================
 */
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 
   font-weight: var(--font-weight-bold);
@@ -462,11 +462,11 @@ body {
   color: var(--main-txt-cl);
 }
 
-.clients-list {
+.clients__list {
   --items: 6;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -481,13 +481,13 @@ body {
   transition: border var(--anim);
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--accent-txt-cl);
-  border-color: var(--accent-txt-cl);
+.clients__link:hover,
+.clients__link:focus {
+  color: var(--accent-cl);
+  border-color: var(--accent-cl);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 
   transition: color var(--anim);
@@ -500,7 +500,7 @@ body {
 */
 
 /* Filter button */
-.filter-list {
+.filter {
   --items: 5;
   --indent: 8px;
   justify-content: center;
@@ -510,16 +510,16 @@ body {
 
 
 /* Gallery portfolio group */
-.gallery-portfolio {
+.portfolio {
   --items: 3;
 }
 
-.portfolio-thumb {
+.portfolio-card__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-card-overlay {
+.portfolio-card__overlay {
   position: absolute;
   top: 0;
   transform: translateY(100%);
@@ -527,7 +527,7 @@ body {
   transition: transform var(--anim);
 }
 
-.project-desc {
+.portfolio-card__desc {
   padding: 63px 24px;
   font-size: 18px;
   line-height: calc(28/18);
@@ -536,12 +536,12 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio-wrap {
+.portfolio-card__meta {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 
-.project-name {
+.portfolio-card__name {
   margin-bottom: 4px;
 
   font-weight: var(--font-weight-bold);
@@ -550,24 +550,24 @@ body {
   letter-spacing: 0.06em;
 }
 
-.project-type {
+.portfolio-card__type {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--grey-txt-cl);
 }
 
-.portfolio-link {
+.portfolio-card__link {
   display: block;
   transition: box-shadow var(--anim);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-card__link:hover,
+.portfolio-card__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:hover .portfolio-card-overlay,
-.portfolio-link:focus .portfolio-card-overlay {
+.portfolio-card__link:hover .portfolio-card__overlay,
+.portfolio-card__link:focus .portfolio-card__overlay {
   transform: translateY(0);
 }
 
@@ -626,7 +626,7 @@ body {
 
 .address__link:hover,
 .address__link:focus {
-  color: var(--accent-txt-cl);
+  color: var(--accent-cl);
 }
 
 /* Join group in page-footer */
@@ -737,7 +737,7 @@ body {
   transition: transform var(--anim);
 }
 
-.modal-close-btn {
+.modal-close__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -758,13 +758,13 @@ body {
   cursor: pointer;
 }
 
-.modal-close-btn>.register-form-icon {
+.modal-close__btn>.modal-close__icon {
   transition: fill var(--anim);
 }
 
-.modal-close-btn:hover>.register-form-icon,
-.modal-close-btn:focus>.register-form-icon {
-  fill: var(--accent-txt-cl);
+.modal-close__btn:hover>.modal-close__icon,
+.modal-close__btn:focus>.modal-close__icon {
+  fill: var(--accent-cl);
 }
 
 /**
@@ -773,7 +773,7 @@ body {
   |============================
 */
 
-.register-form-title {
+.register-form__title {
   display: block;
   margin-bottom: 12px;
 
@@ -784,17 +784,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.register-form-group {
+.register-form__content {
   margin-bottom: 20px;
 }
 
-.register-form-field {
+.register-form__field {
   position: relative;
 
   display: block;
 }
 
-.register-form-label {
+.register-form__label {
   display: block;
 
   margin-bottom: 4px;
@@ -805,7 +805,7 @@ body {
   color: var(--grey-txt-cl);
 }
 
-.register-form-group .register-form-icon {
+.register-form__content .register-form__icon {
   position: absolute;
   left: 12px;
   bottom: 11px;
@@ -813,16 +813,16 @@ body {
   transition: fill var(--anim);
 }
 
-.register-form-input:active+.register-form-icon,
-.register-form-input:focus+.register-form-icon {
-  fill: var(--accent-txt-cl);
+.register-form__input:active+.register-form__icon,
+.register-form__input:focus+.register-form__icon {
+  fill: var(--accent-cl);
 }
 
-.register-form-group .register-form-field:not(:last-child) {
+.register-form__content .register-form__field:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.register-form-input {
+.register-form__input {
   width: 100%;
   height: 40px;
 
@@ -840,11 +840,11 @@ body {
   transition: border-color var(--anim);
 }
 
-.register-form-input:active,
-.register-form-input:focus,
+.register-form__input:active,
+.register-form__input:focus,
 .register-form-message:active,
 .register-form-message:focus {
-  border-color: var(--accent-txt-cl);
+  border-color: var(--accent-cl);
 }
 
 .register-form-message {
@@ -875,7 +875,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.register-form-agreement {
+.register-form__checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -883,30 +883,30 @@ body {
   margin-bottom: 30px;
 }
 
-.icon-checked {
+.checkbox__icon-checked {
   opacity: 0;
   transition: opacity var(--anim);
 }
 
-.register-form-checkbox:checked+.register-form-icons>.icon-checked {
+.checkbox__input:checked+.checkbox__icons>.checkbox__icon-checked {
   opacity: 1;
 }
 
-.icon-unchecked {
+.checkbox__icon-unchecked {
   transition: opacity var(--anim);
 }
 
-.register-form-checkbox:checked+.register-form-icons>.icon-unchecked {
+.checkbox__input:checked+.checkbox__icons>.checkbox__icon-unchecked {
   opacity: 0;
 }
 
-.register-form-checkbox:focus+.register-form-icons {
+.checkbox__input:focus+.checkbox__icons {
   outline: 2px solid var(--black-txt-cl);
   outline-offset: 1px;
   border-radius: 1px;
 }
 
-.register-form-desc {
+.checkbox__desc {
   font-size: 14px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
@@ -914,8 +914,8 @@ body {
   user-select: none;
 }
 
-.register-form-link {
-  color: var(--accent-txt-cl);
+.checkbox__link {
+  color: var(--accent-cl);
 }
 
 /* Components button */
@@ -928,10 +928,10 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--white-txt-cl);
-  background-color: var(--accent-txt-cl);
+  background-color: var(--accent-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  border-color: var(--accent-txt-cl);
+  border-color: var(--accent-cl);
   border-radius: 4px;
   border: none;
 
@@ -958,7 +958,7 @@ body {
   background-color: var(--btn-active-cl);
 }
 
-.filter-btn {
+.filter__btn {
   padding: 6px 22px;
 
   font-family: inherit;
@@ -979,16 +979,16 @@ body {
   transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
 }
 
-.portfolio .list-item:first-child .filter-btn {
+.filter__item:first-child .filter-btn {
   padding-right: 25px;
   padding-left: 25px;
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   color: var(--white-txt-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: var(--accent-txt-cl);
+  background-color: var(--accent-cl);
 }
 
 .submit-btn {
@@ -1006,7 +1006,7 @@ body {
   line-height: calc(30/16);
   letter-spacing: 0.06em;
   color: var(--white-txt-cl);
-  background-color: var(--accent-txt-cl);
+  background-color: var(--accent-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
