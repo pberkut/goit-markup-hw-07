@@ -116,7 +116,7 @@
     <!-- About section -->
     <section class="about section">
       <div class="container">
-        <h2 class="about__title">Чим ми займаємося</h2>
+        <h2 class="about__title title">Чим ми займаємося</h2>
         <ul class="about__list grid-set list">
           <li class="about__item grid-set-item">
             <img class="img" src="./images/about/box-1.jpg" alt="Написання коду HTML&CSS на компьютері" width="370"
@@ -139,13 +139,13 @@
     <!-- Team section -->
     <section class="team section">
       <div class="container">
-        <h2 class="team__title">Наша команда</h2>
+        <h2 class="team__title title">Наша команда</h2>
         <ul class="team__list grid-set list">
           <li class="team__item team-card grid-set-item">
             <img class="img" src="./images/team/img-1.jpg" alt="Фотографія Ігоря Дем'яненка" width="270" height="260" />
             <div class="team-card__meta">
               <h3 class="team-card__name">Ігор Дем'яненко</h3>
-              <p class="team-card__position"" lang=" en">Product Designer</p>
+              <p class="team-card__position" lang="en">Product Designer</p>
               <ul class="socials__list grid-set list">
                 <li class="socials__item grid-set-item">
                   <a class="socials__link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
@@ -182,7 +182,7 @@
             <img class="img" src="./images/team/img-2.jpg" alt="Фотографія Ольги Рєпіної" width="270" height="260" />
             <div class="team-card__meta">
               <h3 class="team-card__name">Ольга Рєпіна</h3>
-              <p class="team-card__position"" lang=" en">Frontend Developer</p>
+              <p class="team-card__position" lang="en">Frontend Developer</p>
               <ul class="socials__list grid-set list">
                 <li class="socials__item grid-set-item">
                   <a class="socials__link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
@@ -219,7 +219,7 @@
             <img class="img" src="./images/team/img-3.jpg" alt="Фотографія Миколи Тарасова" width="270" height="260" />
             <div class="team-card__meta">
               <h3 class="team-card__name">Микола Тарасов</h3>
-              <p class="team-card__position"" lang=" en">Marketing</p>
+              <p class="team-card__position" lang="en">Marketing</p>
               <ul class="socials__list grid-set list">
                 <li class="socials__item grid-set-item">
                   <a class="socials__link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
@@ -256,7 +256,7 @@
             <img class="img" src="./images/team/img-4.jpg" alt="Фото Михайла Єрмакова" width="270" height="260" />
             <div class="team-card__meta">
               <h3 class="team-card__name">Михайло Єрмаков</h3>
-              <p class="team-card__position"" lang=" en">UI Designer</p>
+              <p class="team-card__position" lang="en">UI Designer</p>
               <ul class="socials__list grid-set list">
                 <li class="socials__item grid-set-item">
                   <a class="socials__link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
@@ -295,7 +295,7 @@
     <!-- Clients section -->
     <section class="clients section">
       <div class="container">
-        <h2 class="clients__title">Постійні клієнти</h2>
+        <h2 class="clients__title title">Постійні клієнти</h2>
         <ul class="clients__list grid-set list">
           <li class="clients__item grid-set-item">
             <a class="clients__link link" href="">
@@ -360,8 +360,8 @@
           </ul>
         </address>
       </div>
-      <div class="join">
-        <h2 class="join__title">приєднуйтесь</h2>
+      <div class="subscribe">
+        <h2 class="subscribe__title">приєднуйтесь</h2>
         <ul class="socials socials__list grid-set list">
           <li class="socials__item">
             <a class="socials__link socials__link--dark-theme link" href="https://instagram.com" target="_blank"
@@ -402,7 +402,7 @@
           <span class="subscribe-form__label">Підпишіться на розсилку</span>
           <input class="subscribe-form__input" type="email" name="subscribe-email" placeholder="E-mail">
         </label>
-        <button class="submit-btn" type="submit">Підписатися
+        <button class="btn subscribe__btn" type="submit">Підписатися
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
           </svg>
@@ -414,8 +414,8 @@
   <!-- Modal windows -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-close__btn" type="button" data-modal-close>
-        <svg class="modal-close__icon" width="18" height="18">
+      <button class="modal__close-btn" type="button" data-modal-close>
+        <svg class="modal__close-icon" width="18" height="18">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
@@ -445,7 +445,7 @@
           </label>
           <label class="register-form__field">
             <span class="register-form__label">Коментар</span>
-            <textarea class="register-form-message" rows="5" name="user-message" placeholder="Введіть текст"
+            <textarea class="register-form__message" rows="5" name="user-message" placeholder="Введіть текст"
               autocomplete="off"></textarea>
           </label>
         </div>
@@ -460,7 +460,7 @@
             <a class="checkbox__link" href="" target="_blank">Умови договору</a>
           </span>
         </label>
-        <button class="submit-btn" type="submit">Відправити</button>
+        <button class="btn register-form__btn" type="submit">Відправити</button>
       </form>
     </div>
   </div>
