@@ -3,12 +3,12 @@
   | Clients section
   |============================
 */
-
-.clients__list {
+.clients {
+  &__list {
     --items: 6;
-}
+  }
 
-.clients__link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,16 +21,17 @@
     border-radius: 4px;
 
     transition: border var(--anim);
-    
+
     &:hover,
     &:focus {
-        color: var(--accent-cl);
-        border-color: var(--accent-cl);
+      color: var(--accent-cl);
+      border-color: var(--accent-cl);
     }
-}
+  }
 
-.clients__icon {
+  &__icon {
     fill: currentColor;
 
     transition: color var(--anim);
+  }
 }

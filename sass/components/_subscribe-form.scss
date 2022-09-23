@@ -1,32 +1,13 @@
-/* Subscribe group in page-footer */
-
-.subscribe {
-    margin-right: 93px;
-}
-
-.subscribe__title {
-    margin-bottom: 20px;
-    font-weight: var(--font-weight-bold);
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-txt-cl);
-}
-
 /* Subscribe form in page-footer */
-
 .subscribe-form {
-    display: flex;
-    align-items: flex-end;
-}
+  display: flex;
+  align-items: flex-end;
 
-.subscribe-form__field {
+  &__field {
     margin-right: 12px;
+  }
 
-}
-
-.subscribe-form__label {
+  &__label {
     display: flex;
     flex-direction: column;
 
@@ -34,13 +15,13 @@
 
     font-weight: 700;
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-txt-cl);
-}
+  }
 
-.subscribe-form__input {
+  &__input {
     width: 358px;
     height: 50px;
 
@@ -52,11 +33,11 @@
     background-color: var(--dark-bg-cl);
 
     &::placeholder {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: calc(20/16);
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
     }
-
+  }
 }

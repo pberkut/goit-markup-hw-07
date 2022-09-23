@@ -3,11 +3,12 @@
   | Benefits section
   |============================
 */
-.benefits__list {
+.benefits {
+  &__list {
     --items: 4;
-}
+  }
 
-.benefits__wrap {
+  &__wrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,9 +16,9 @@
     margin-bottom: 30px;
 
     background-color: var(--grey-bg-cl);
-}
+  }
 
-.benefits__subtitle {
+  &__subtitle {
     margin-bottom: 10px;
 
     font-weight: var(--font-weight-bold);
@@ -25,11 +26,12 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
+  }
 
-.benefits__desc {
+  &__desc {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--grey-txt-cl);
+  }
 }
