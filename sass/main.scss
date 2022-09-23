@@ -1,0 +1,36 @@
+//Base modules
+@import "./base/base";
+
+//Components modules
+@import "./components/components";
+
+//Layout modules
+@import "./layout/layout";
+
+//Utils modules
+@import "./utils/utils";
+
+// Utils styles
+@import "./utils/variables";
+@import "./utils/utils";
+@import "./utils/grid-set";
+@import "./utils/base";
+
+//components
+@import "./components/container";
+@import "./components/logo";
+@import "./components/page-header";
+@import "./components/main-nav";
+@import "./components/contacts-header";
+@import "./components/hero-section";
+@import "./components/benefits-section";
+@import "./components/about-section";
+@import "./components/team-section";
+@import "./components/socials-list";
+@import "./components/clients-section";
+@import "./components/portfoilio-section";
+@import "./components/page-footer";
+@import "./components/subscribe-form";
+@import "./components/btn";
+@import "./components/modal-window";
+@import "./components/register-form";
